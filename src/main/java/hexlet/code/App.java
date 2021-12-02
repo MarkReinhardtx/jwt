@@ -1,4 +1,3 @@
-
 package hexlet.code;
 
 import picocli.CommandLine;
@@ -6,22 +5,20 @@ import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
 
 
-@Command(name = "checksum", mixinStandardHelpOptions = true, version = "checksum 4.0",
-        description = "Prints the checksum (MD5 by default) of a file to STDOUT.")
-class App {
+@Command(
+        name = "gendiff",
+        mixinStandardHelpOptions = true,
+        version = "gendiff 0.3",
+        description = "Compares two configuration files and shows a difference.")
 
-    @Parameters(index = "0", description = "The file whose checksum to calculate.")
-    private File file;
+public class App {
 
-    @Option(names = {"-a", "--algorithm"}, description = "MD5, SHA-1, SHA-256, ...")
-    private String algorithm = "MD5";
-
-    @Override
-    public Integer call() throws Exception { // your business logic goes here...
-        byte[] fileContents = Files.readAllBytes(file.toPath());
-        byte[] digest = MessageDigest.getInstance(algorithm).digest(fileContents);
-        System.out.printf("%0" + (digest.length*2) + "x%n", new BigInteger(1, digest));
-        return 0;
-    }
-
-
+    @Option(
+            names = {"-f", "--format"},
+            description = "output format [default: stylish]",
+            required=true)
+            private String required;
+    @Parameters(index = "0", description = "path to first file")
+    private String file1;
+    @Parameters(index = "1", description = "path to second file")
+    private String file2;
