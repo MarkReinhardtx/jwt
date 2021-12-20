@@ -1,37 +1,42 @@
 package hexlet.code;
 
 import picocli.CommandLine;
+import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
 
-import java.io.File;
-import java.math.BigInteger;
-import java.nio.file.Files;
-import java.security.MessageDigest;
-import java.util.concurrent.Callable;
 
-@CommandLine.Command(name = "checksum", mixinStandardHelpOptions = true, version = "checksum 4.0",
-        description = "Prints the checksum (MD5 by default) of a file to STDOUT.")
-class App implements Callable<Integer> {
+@Command(name = "gendiff", mixinStandardHelpOptions = true, version = "gendiff 1.0",
+        description = "Compares two configuration files and shows a difference.")
 
-    @Parameters(index = "0", description = "The file whose checksum to calculate.")
-    private File file;
+class App implements Runnable {
 
-    @Option(names = {"-a", "--algorithm"}, description = "MD5, SHA-1, SHA-256, ...")
-    private String algorithm = "MD5";
+    @Parameters(index = "0", description = "path to first file")
+    private String filePath1;
+
+    @Parameters(index = "1", description = "path to second file")
+    private String filePath2;
+
+    @Option(
+            names = {"-f", "--format"},
+            description = "output format: stylish, plain, json, no-format [default: ${DEFAULT-VALUE}]",
+            defaultValue = "stylish")
+    private String format;
 
     @Override
-    public Integer call() throws Exception { // your business logic goes here...
-        byte[] fileContents = Files.readAllBytes(file.toPath());
-        byte[] digest = MessageDigest.getInstance(algorithm).digest(fileContents);
-        System.out.printf("%0" + (digest.length*2) + "x%n", new BigInteger(1, digest));
-        return 0;
+    public final void run() {
+        try {
+            System.out.println(Differ.generate(filePath1, filePath2));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    // this example implements Callable, so parsing, error handling and handling user
-    // requests for usage help or version help can be done with one line of code.
-    public static void main(String... args) {
-        int exitCode = new CommandLine(new App()).execute(args);
-        System.exit(exitCode);
+    public static void main(String[] args) {
+        final var commandLineRunner = new CommandLine(new App());
+        commandLineRunner.execute(args);
+
+        final String result = commandLineRunner.getExecutionResult();
+        System.out.println(result);
     }
 }
