@@ -14,8 +14,8 @@ public class Differ {
     public static String generate(String filePath1, String filePath2) throws Exception {
         String file1 = Files.readString(Paths.get(filePath1));
         String file2 = Files.readString(Paths.get(filePath2));
-        Map<String, Object> parsedFile1 = Parser.parse(file1, useSubstring(filePath1));
-        Map<String, Object> parsedFile2 = Parser.parse(file2, useSubstring(filePath2));
+        Map<String, Object> parsedFile1 = Parser.parse(file1);
+        Map<String, Object> parsedFile2 = Parser.parse(file2);
 
         Set<String> keys1 = parsedFile1.keySet();
         Set<String> keysSort = new TreeSet<>(keys1);
@@ -40,8 +40,5 @@ public class Differ {
         }
 
         return "{\r\n" + diff.stream().collect(Collectors.joining()) + "}";
-    }
-    private static String useSubstring(String formatFile) {
-        return formatFile.substring(formatFile.indexOf(".") + 1);
     }
 }
