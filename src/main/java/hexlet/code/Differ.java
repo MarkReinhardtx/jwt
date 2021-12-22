@@ -28,17 +28,17 @@ public class Differ {
             Object value1 = parsedFile1.get(key);
             Object value2 = parsedFile2.get(key);
             if (value1 == null && value2 != null) {
-                diff.add("  + " + key + ": " +  value2 + "\r\n");
+                diff.add("  + " + key + ": " +  value2 + "\n");
             } else if (value1 != null && value2 == null) {
-                diff.add("  - " + key + ": " +  value1 + "\r\n");
+                diff.add("  - " + key + ": " +  value1 + "\n");
             } else if (value1.equals(value2)) {
-                diff.add("    " + key + ": " +  value2 + "\r\n");
+                diff.add("    " + key + ": " +  value2 + "\n");
             } else {
-                diff.add("  - " + key + ": " +  value1 + "\r\n");
-                diff.add("  + " + key + ": " +  value2 + "\r\n");
+                diff.add("  - " + key + ": " +  value1 + "\n");
+                diff.add("  + " + key + ": " +  value2 + "\n");
             }
         }
 
-        return "{\r\n" + diff.stream().collect(Collectors.joining()) + "}";
+        return "{\n" + diff.stream().collect(Collectors.joining()) + "}\n";
     }
 }
