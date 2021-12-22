@@ -19,9 +19,9 @@ public class DifferTest {
         return Files.readString(path);
     }
     @Test
-    public void differTestJson() throws Exception {
-        String expected1 = getFile("file1_file2.txt");
-        String actual1 = Differ.generate(getPath("file1.json"), getPath("file2.json"));
-        Assertions.assertEquals(expected1, actual1);
+    public void getDifferTwoFiles() throws Exception {
+        String expected = getFile("file1_file2.txt");
+        String result = Differ.generate(getPath("file1.json"), getPath("file2.json"));
+        Assertions.assertEquals(expected, result);
     }
 }
