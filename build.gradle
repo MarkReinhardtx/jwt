@@ -22,18 +22,24 @@ test {
 }
 jacocoTestReport {
     dependsOn test
+    reports {
+        xml.required = true
+    }
 }
 
 
-dependencies {
-    implementation 'info.picocli:picocli:4.6.2'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.0'
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.0'
-    implementation 'com.fasterxml:jackson-xml-databind:0.6.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    dependencies {
+        implementation 'info.picocli:picocli:4.6.2'
+        implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.1'
+        implementation 'com.fasterxml.jackson.core:jackson-core:2.13.1'
+        implementation 'com.fasterxml:jackson-xml-databind:0.6.2'
+        testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+        testImplementation 'org.assertj:assertj-core:3.21.0'
+        implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.1'
 
-}
+    }
 
-application {
-    mainClass = 'hexlet.code.App'
-}
+    application {
+        mainClass = 'hexlet.code.App'
+    }
