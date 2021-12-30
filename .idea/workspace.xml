@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c814c9-9eec-4dae-b480-001fbe276203" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/file1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file1.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file2.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/file1.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/file1_file2_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/file1_file2_yml.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/file2.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/file3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/file4.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DifferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DifferTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +101,7 @@
       <recent name="hexlet.code" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DifferTest.getDifferJson2">
+  <component name="RunManager" selected="Makefile Target.lint">
     <configuration name="DifferTest.getDifferJson" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,73 +125,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DifferTest.getDifferJson2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;DifferTest.getDifferJson2&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DifferTest.getDifferTwoFiles (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;DifferTest.getDifferTwoFiles&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DifferTest.getDifferYml" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;DifferTest.getDifferYml&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+    <configuration name="install" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="install" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
       <method v="2" />
     </configuration>
     <configuration name="lint" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
@@ -215,13 +137,25 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="run-dist" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="run-dist" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="run" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DifferTest.getDifferJson2" />
-        <item itemvalue="Gradle.DifferTest.getDifferYml" />
-        <item itemvalue="Gradle.DifferTest.getDifferJson" />
         <item itemvalue="Makefile Target.lint" />
-        <item itemvalue="Gradle.DifferTest.getDifferTwoFiles (1)" />
+        <item itemvalue="Gradle.DifferTest.getDifferJson" />
+        <item itemvalue="Makefile Target.run" />
+        <item itemvalue="Makefile Target.run-dist" />
+        <item itemvalue="Makefile Target.install" />
       </list>
     </recent_temporary>
   </component>
