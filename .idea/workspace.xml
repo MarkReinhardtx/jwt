@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47c814c9-9eec-4dae-b480-001fbe276203" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/file1_file2_plain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/file1_file2_plain2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Formatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/formatters/Plain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/formatters/Stylish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/file1_file2_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DifferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DifferTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="47c814c9-9eec-4dae-b480-001fbe276203" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
