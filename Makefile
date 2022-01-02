@@ -16,5 +16,8 @@ lint:
 check-updates:
 	./gradlew dependencyUpdates
 
+report:
+	./gradlew jacocoTestReport
+
 build-run: build run
 .PHONY: build
