@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c814c9-9eec-4dae-b480-001fbe276203" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/file1_file2_plain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/file1_file2_plain2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/formatters/Plain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/formatters/Stylish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/file1_file2_2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DifferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DifferTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +111,30 @@
     </key>
   </component>
   <component name="RunManager" selected="Makefile Target.lint">
-    <configuration name="DifferTest.getDifferJson" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DifferTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;DifferTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="DifferTest.getDifferJson (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -137,12 +169,6 @@
       </makefile>
       <method v="2" />
     </configuration>
-    <configuration name="run-dist" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="run-dist" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
     <configuration name="run" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="run" workingDirectory="" arguments="">
         <envs />
@@ -152,10 +178,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Makefile Target.lint" />
-        <item itemvalue="Gradle.DifferTest.getDifferJson" />
-        <item itemvalue="Makefile Target.run" />
-        <item itemvalue="Makefile Target.run-dist" />
+        <item itemvalue="Gradle.DifferTest" />
         <item itemvalue="Makefile Target.install" />
+        <item itemvalue="Gradle.DifferTest.getDifferJson (1)" />
+        <item itemvalue="Makefile Target.run" />
       </list>
     </recent_temporary>
   </component>
