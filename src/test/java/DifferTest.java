@@ -20,7 +20,7 @@ public class DifferTest {
     }
 
     @Test
-    public void getDifferJson() throws Exception {
+    public void getDifferJsonYml() throws Exception {
         String expected = getFile("file1_file2.txt")
                 .substring(0, getFile("file1_file2.txt").length() - 1);
         String result = Differ.generate(getPath("file1.json"), getPath("file2.json"));
@@ -50,6 +50,11 @@ public class DifferTest {
                 .substring(0, getFile("file1_file2_yml_json.txt").length() - 1);
         String result5 = Differ.generate(getPath("file1.yml"), getPath("file2.yml"), "json");
         Assertions.assertEquals(expected5, result5);
+
+        String expected6 = getFile("file1_file2_yml_2.txt")
+                .substring(0, getFile("file1_file2_yml_2.txt").length() - 1);
+        String result6 = Differ.generate(getPath("file3.yml"), getPath("file4.yml"));
+        Assertions.assertEquals(expected6, result6);
     }
 
 }
