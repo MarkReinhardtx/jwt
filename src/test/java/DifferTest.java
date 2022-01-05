@@ -21,23 +21,23 @@ public class DifferTest {
 
     @Test
     public void getDifferJson() throws Exception {
-        String expected = getFile("file1_file2.txt");
-        String result = Differ.generate(getPath("file1.json"), getPath("file2.json"), "stylish");
+        String expected = getFile("file1_file2.txt").substring(0, getFile("file1_file2.txt").length() - 1);
+        String result = Differ.generate(getPath("file1.json"), getPath("file2.json"));
         Assertions.assertEquals(expected, result);
 
-        String expectedYml = getFile("file1_file2_yml.txt");
-        String resultYml = Differ.generate(getPath("file1.yml"), getPath("file2.yml"), "stylish");
+        String expectedYml = getFile("file1_file2_yml.txt").substring(0, getFile("file1_file2_yml.txt").length() - 1);
+        String resultYml = Differ.generate(getPath("file1.yml"), getPath("file2.yml"));
         Assertions.assertEquals(expectedYml, resultYml);
 
-        String expected2 = getFile("file1_file2_2.txt");
-        String result2 = Differ.generate(getPath("file3.json"), getPath("file4.json"), "stylish");
+        String expected2 = getFile("file1_file2_2.txt").substring(0, getFile("file1_file2_2.txt").length() - 1);
+        String result2 = Differ.generate(getPath("file3.json"), getPath("file4.json"));
         Assertions.assertEquals(expected2, result2);
 
-        String expected3 = getFile("file1_file2_plain.txt");
+        String expected3 = getFile("file1_file2_plain.txt").substring(0, getFile("file1_file2_plain.txt").length() - 1);
         String result3 = Differ.generate(getPath("file1.json"), getPath("file2.json"), "plain");
         Assertions.assertEquals(expected3, result3);
 
-        String expected4 = getFile("file1_file2_plain2.txt");
+        String expected4 = getFile("file1_file2_plain2.txt").substring(0, getFile("file1_file2_plain2.txt").length() - 1);;
         String result4 = Differ.generate(getPath("file3.json"), getPath("file4.json"), "plain");
         Assertions.assertEquals(expected4, result4);
     }
