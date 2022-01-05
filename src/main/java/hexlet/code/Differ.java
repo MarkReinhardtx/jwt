@@ -13,8 +13,8 @@ public class Differ {
     public static String generate(String filePath1, String filePath2, String format) throws Exception {
         String file1 = Files.readString(Paths.get(filePath1));
         String file2 = Files.readString(Paths.get(filePath2));
-        Map<String, Object> parsedFile1 = Parser.parse(file1);
-        Map<String, Object> parsedFile2 = Parser.parse(file2);
+        Map<String, Object> parsedFile1 = Parser.parse(file1, getFileExtension(filePath1));
+        Map<String, Object> parsedFile2 = Parser.parse(file2, getFileExtension(filePath2));
 
         Set<String> keys1 = parsedFile1.keySet();
         Set<String> keysSort = new TreeSet<>(keys1);
@@ -40,5 +40,7 @@ public class Differ {
     public static String generate(String filePath1, String filePath2) throws Exception {
         return generate(filePath1, filePath2, "stylish");
     }
-
+    private static String getFileExtension(String pathToFile) {
+        return pathToFile.substring(pathToFile.indexOf(".") + 1);
+    }
 }

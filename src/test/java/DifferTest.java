@@ -48,13 +48,8 @@ public class DifferTest {
 
         String expected5 = getFile("file1_file2_yml_json.txt")
                 .substring(0, getFile("file1_file2_yml_json.txt").length() - 1);
-        String result5 = Differ.generate(getPath("file1.yml"), getPath("file2.yml"), "json");
+        String result5 = Differ.generate(getPath("file3.yml"), getPath("file4.yml"), "json");
         Assertions.assertEquals(expected5, result5);
-
-        String expected6 = getFile("file1_file2_yml_2.txt")
-                .substring(0, getFile("file1_file2_yml_2.txt").length() - 1);
-        String result6 = Differ.generate(getPath("file3.yml"), getPath("file4.yml"));
-        Assertions.assertEquals(expected6, result6);
     }
 
 }
