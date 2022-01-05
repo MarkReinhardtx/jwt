@@ -19,6 +19,6 @@ public class Stylish {
                 formatted += "  + " + key + ": " + diffValue.get("changed")[1] + "\n";
             }
         }
-        return formatted + "}";
+        return formatted + "}\n";
     }
 }

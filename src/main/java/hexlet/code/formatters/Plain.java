@@ -24,7 +24,7 @@ public class Plain {
             }
         }
 
-        return formatted.substring(0, formatted.length() - 1);
+        return formatted;
     }
 
     private static boolean complex(Object obj) {
