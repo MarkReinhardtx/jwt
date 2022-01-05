@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c814c9-9eec-4dae-b480-001fbe276203" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2_plain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2_plain2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2_yml.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file2.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file1.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file1_file2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_plain.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_plain2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_yml.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file2.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file4.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DifferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DifferTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
