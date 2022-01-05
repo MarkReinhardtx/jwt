@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c814c9-9eec-4dae-b480-001fbe276203" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2_plain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2_plain2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2_yml.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file1.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file1_file2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_plain.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_plain2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file1_file2_yml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file2.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/file4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DifferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DifferTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,12 +109,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/FromHexlet/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -100,7 +126,30 @@
       <recent name="hexlet.code" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.java-project-lvl2 [compileJava]">
+  <component name="RunManager" selected="Gradle.DifferTest">
+    <configuration name="DifferTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;DifferTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="java-project-lvl2 [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -185,19 +234,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="run-dist" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="run-dist" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DifferTest" />
         <item itemvalue="Gradle.java-project-lvl2 [compileJava]" />
         <item itemvalue="Gradle.java-project-lvl2 [test]" />
         <item itemvalue="Gradle.java-project-lvl2 [dependencies]" />
         <item itemvalue="Gradle.java-project-lvl2 [jacocoTestReport]" />
-        <item itemvalue="Makefile Target.run-dist" />
       </list>
     </recent_temporary>
   </component>

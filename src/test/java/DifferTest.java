@@ -11,7 +11,7 @@ public class DifferTest {
 
 
     public static String getPath(String file) {
-        return Paths.get("src/main/" + file).toString();
+        return Paths.get("src/test/java/resources/" + file).toString();
     }
 
     public static String getFile(String file) throws IOException {
