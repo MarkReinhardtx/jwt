@@ -6,28 +6,28 @@ import java.util.Map;
 public class Plain {
 
     public static String format(Map<String, Map<String, Object[]>> diff) {
-        String formatted = "";
+        String formattedDiff = "";
         for (String key : diff.keySet()) {
             Map<String, Object[]> diffValue = diff.get(key);
             if (diffValue.containsKey("same")) {
                 continue;
             }
 
-            formatted += "Property '" + key + "' was ";
+            formattedDiff += "Property '" + key + "' was ";
             if (diffValue.containsKey("add")) {
-                formatted += "added with value: " + filterValue(diffValue.get("add")[0]) + "\n";
+                formattedDiff += "added with value: " + filterValue(diffValue.get("add")[0]) + "\n";
             } else if (diffValue.containsKey("delete")) {
-                formatted += "removed\n";
+                formattedDiff += "removed\n";
             } else {
-                formatted += "updated. From " + filterValue(diffValue.get("changed")[0])
+                formattedDiff += "updated. From " + filterValue(diffValue.get("changed")[0])
                         + " to " + filterValue(diffValue.get("changed")[1]) + "\n";
             }
         }
 
-        return formatted;
+        return formattedDiff.substring(0, formattedDiff.length() - 1);
     }
 
-    private static boolean complex(Object obj) {
+    private static boolean isComplex(Object obj) {
         return obj != null
                 && (obj.getClass().isArray()
                 || Map.class.isAssignableFrom(obj.getClass())
@@ -37,7 +37,7 @@ public class Plain {
     private static Object filterValue(Object value) {
         if (value instanceof String) {
             return "'" + value + "'";
-        } else if (complex(value)) {
+        } else if (isComplex(value)) {
             return "[complex value]";
         }
         return value;
