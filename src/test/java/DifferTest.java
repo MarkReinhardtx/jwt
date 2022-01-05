@@ -22,11 +22,11 @@ public class DifferTest {
     @Test
     public void getDifferJson() throws Exception {
         String expected = getFile("file1_file2.txt");
-        String result = Differ.generate(getPath("file1.json"), getPath("file2.json"), "stylish");
+        String result = Differ.generate(getPath("file1.json"), getPath("file2.json"));
         Assertions.assertEquals(expected, result);
 
         String expectedYml = getFile("file1_file2_yml.txt");
-        String resultYml = Differ.generate(getPath("file1.yml"), getPath("file2.yml"), "stylish");
+        String resultYml = Differ.generate(getPath("file1.yml"), getPath("file2.yml"));
         Assertions.assertEquals(expectedYml, resultYml);
 
         String expected2 = getFile("file1_file2_2.txt");
