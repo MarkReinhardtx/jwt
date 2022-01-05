@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c814c9-9eec-4dae-b480-001fbe276203" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/file1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/file1_file2_yml_json.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DifferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DifferTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,9 +189,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.DifferTest.getDifferJson" />
-        <item itemvalue="Gradle.DifferTest (1)" />
         <item itemvalue="Makefile Target.install" />
         <item itemvalue="Makefile Target.build" />
+        <item itemvalue="Gradle.DifferTest (1)" />
         <item itemvalue="Gradle.java-project-lvl2 [compileJava]" />
       </list>
     </recent_temporary>

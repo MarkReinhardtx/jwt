@@ -1,0 +1,1 @@
+{"follow":{"delete":[false]},"host":{"same":["hexlet.io"]},"proxy":{"delete":["123.234.53.22"]},"timeout":{"changed":[50,20]},"verbose":{"add":[true]}}
